@@ -78,21 +78,19 @@ class interface:      # interface class determines how program will interact wit
 
 
         elif c==1:    # if admin wants to create a new quiz
-
+            print('how many questions you want to add into the quiz')
+            n = int(input())
             if k==1:
                 self.all_quizes1[qname]=quiz()
-                print('add 2 questions to create quiz successfully')
-                for i in range(2):
+                for i in range(n):
                     self.all_quizes1[qname].createquestions(i+1)
             elif k==2:
                 self.all_quizes2[qname]=quiz()
-                print('add 2 questions to create quiz successfully')
-                for i in range(2):
+                for i in range(n):
                     self.all_quizes2[qname].createquestions(i+1)
             elif k==3:
                 self.all_quizes3[qname]=quiz()
-                print('add 2 questions to create quiz successfully')
-                for i in range(2):
+                for i in range(n):
                     self.all_quizes3[qname].createquestions(i+1)
             else:
                 print('invalid choice')
