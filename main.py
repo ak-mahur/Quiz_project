@@ -121,6 +121,7 @@ class interface:      # interface class determines how program will interact wit
                     m=self.all_quizes1[choice].calculatescore()
                     s.getdetails()
                     print(m)
+                    self.all_quizes1[choice].displayanswers()
 
             elif k==2:
                 if len(self.all_quizes2)==0:
@@ -135,6 +136,7 @@ class interface:      # interface class determines how program will interact wit
                     m=self.all_quizes2[choice].calculatescore()
                     s.getdetails()
                     print(m)
+                    self.all_quizes2[choice].displayanswers()
 
             elif k==3:
                 if len(self.all_quizes3)==0:
@@ -149,6 +151,7 @@ class interface:      # interface class determines how program will interact wit
                     m=self.all_quizes3[choice].calculatescore()
                     s.getdetails()
                     print(m)
+                    self.all_quizes3[choice].displayanswers()
             else:
                 print('invalid choice of level')
 
