@@ -33,3 +33,9 @@ class quiz:
             if self.question_list[i+1].test():     #marks will be increases whenever test function of question obj returns true
                 marks+=2
         return str(marks)+' scored out of '+str(total)
+    
+    def displayanswers(self):
+        for i in range(len(self.question_list)):
+            print('answer to question',i+1,end=' ')
+            x=self.question_list[i+1].correct
+            print(x,self.question_list[i+1].options[x-1])
